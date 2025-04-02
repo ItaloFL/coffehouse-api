@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "tsnd --exit-child --transpile-only src/server.ts",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "build": "tsup src",
+    "start": "node dist/server.js"
   },
   "dependencies": {
     "@prisma/client": "^3.14.0",
@@ -29,6 +31,7 @@
     "@types/uuid": "^8.3.4",
     "@vitest/coverage-c8": "^0.22.1",
     "prisma": "^3.14.0",
+    "tsup": "^8.4.0",
     "vitest": "^0.22.1"
   }
 }
